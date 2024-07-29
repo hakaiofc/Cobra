@@ -54,7 +54,7 @@ local Event = game:GetService("ReplicatedStorage").Remotes.Dumbbell
 Event:FireServer()
 local Event = game:GetService("ReplicatedStorage").Remotes.Pushup
 Event:FireServer()
-wait()
+wait(0.475)
 end
 end
 --HubExclusivo
