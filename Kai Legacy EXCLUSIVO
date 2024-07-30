@@ -28,7 +28,7 @@ local Event = game:GetService("ReplicatedStorage").Remotes.Pushup
 Event:FireServer()
 local Event = game:GetService("ReplicatedStorage").Remotes.BenchToggle
 Event:FireServer()
-wait(0.475)
+wait(0.485)
 end
 end
 --Valor
@@ -54,7 +54,7 @@ local Event = game:GetService("ReplicatedStorage").Remotes.Dumbbell
 Event:FireServer()
 local Event = game:GetService("ReplicatedStorage").Remotes.Pushup
 Event:FireServer()
-wait(0.475)
+wait(0.485)
 end
 end
 --HubExclusivo
@@ -67,7 +67,7 @@ local Section = HubExclusivoTab:AddSection({
     Name = "Auto-Farme"
 })
 HubExclusivoTab:AddToggle({
-    Name = "AutoDumbbell,Pushup,Bench",
+    Name = "Auto Dumbbell,Pushup,Bench",
     Default = false,
     Callback = function(Value)
         _G.AutoDPB = Value
@@ -83,7 +83,7 @@ HubExclusivoTab:AddToggle({
     end
 })
 HubExclusivoTab:AddToggle({
-    Name = "AutoDumbbell,Pushup",
+    Name = "Auto Dumbbell,Pushup",
     Default = false,
     Callback = function(Value)
         _G.AutoDP = Value
