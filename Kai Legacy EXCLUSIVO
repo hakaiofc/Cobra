@@ -61,6 +61,7 @@ end
 _G.AutoStamina = True
 --Função
 function AutoStamina()
+while _G.AutoStamina == true do
 local Event = game:GetService("ReplicatedStorage").Remotes.Situp
 Event:FireServer()
 wait(0.485)
