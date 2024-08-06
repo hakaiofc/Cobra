@@ -57,6 +57,15 @@ Event:FireServer()
 wait(0.485)
 end
 end
+--Valor
+_G.AutoStamina = True
+--Função
+function AutoStamina()
+local Event = game:GetService("ReplicatedStorage").Remotes.Situp
+Event:FireServer()
+wait(0.485)
+end
+end
 --HubExclusivo
 local HubExclusivoTab = Window:MakeTab({
     Name = "MenuExclusivo",
@@ -88,6 +97,14 @@ HubExclusivoTab:AddToggle({
     Callback = function(Value)
         _G.AutoDP = Value
         AutoDP()
+    end
+})
+HubExclusivoTab:AddToggle({
+    Name = "Auto Stamina",
+    Default = false,
+    Callback = function(Value)
+        _G.AutoStamina = Value
+        AutoStamina()
     end
 })
 --Infinite-Yield
